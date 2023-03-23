@@ -25,6 +25,7 @@ cargo new -h
 
 create a new cargo package (in this case a new binary application project):
 cargo new myproject
+cargo new pipeviewer
 
 list the content of myproject folder:
 tree --noreport myproject
