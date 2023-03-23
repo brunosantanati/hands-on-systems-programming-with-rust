@@ -15,4 +15,46 @@ rustc -V
 
 check Cargo version:
 cargo version
+
+see all possible usages for cargo:
+cargo
+
+show help info:
+cargo -h
+cargo new -h
+
+create a new cargo package (in this case a new binary application project):
+cargo new myproject
+
+list the content of myproject folder:
+tree --noreport myproject
+or if you are inside the desired folder, simply run:
+tree --noreport
+
+compile and run the project in one step:
+cargo run
+
+compile the binary in release mode, resulting in a faster and smaller binary:
+cargo run --release
+
+run the automatically created binary directly:
+target/debug/myproject
+or if we want to run the release binary:
+target/release/myproject
+
+create a library package:
+cargo new --lib mylib
+
+run the tests:
+cargo test
+
+run only the Doc-tests
+cargo test --doc --package mylib -- four --nocapture
+
+generate documentation and open it in the browser:
+cargo doc --no-deps --open
+the doc will be generated at target/doc/mylib/index.html
+
+build the project (and the entire dependency chain):
+cargo build
 ```
