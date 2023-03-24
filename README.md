@@ -59,3 +59,25 @@ the doc will be generated at target/doc/mylib/index.html
 build the project (and the entire dependency chain):
 cargo build
 ```
+
+## Pipeviewer commands
+```
+run the code:
+cargo run
+
+create a new file:
+dd if=/dev/urandom bs=1024 count=128 of=myfile
+
+show files size:
+ls -lh
+ls -la
+
+build the binary:
+cargo build
+
+run the program again using a file as an input:
+cat myfile | target/debug/pipeviewer > myfile2
+
+see there is no difference between the 2 files:
+diff myfile myfile2
+```
